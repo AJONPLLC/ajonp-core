@@ -12,25 +12,120 @@ import '@stencil/core';
 
 export namespace Components {
 
+  interface AjonpAvatar {
+    'src': any;
+  }
+  interface AjonpAvatarAttributes extends StencilHTMLAttributes {
+    'src'?: any;
+  }
+
+  interface AjonpButton {
+    'buttonType'?: string;
+  }
+  interface AjonpButtonAttributes extends StencilHTMLAttributes {
+    'buttonType'?: string;
+  }
+
+  interface AjonpItemGrid {
+    'buttonType'?: string;
+    'defaultButtonText': string;
+    'defaultColor': string;
+    'defaultLabelText': string;
+    'defaultSrc': string;
+  }
+  interface AjonpItemGridAttributes extends StencilHTMLAttributes {
+    'buttonType'?: string;
+    'defaultButtonText'?: string;
+    'defaultColor'?: string;
+    'defaultLabelText'?: string;
+    'defaultSrc'?: string;
+  }
+
+  interface AjonpItem {
+    'buttonText': string;
+    'buttonType'?: string;
+    'color': string;
+    'labelText': string;
+    'src': string;
+  }
+  interface AjonpItemAttributes extends StencilHTMLAttributes {
+    'buttonText'?: string;
+    'buttonType'?: string;
+    'color'?: string;
+    'labelText'?: string;
+    'src'?: string;
+  }
+
+  interface AjonpLabel {
+    'color': any;
+  }
+  interface AjonpLabelAttributes extends StencilHTMLAttributes {
+    'color'?: any;
+  }
 }
 
 declare global {
   interface StencilElementInterfaces {
-
+    'AjonpAvatar': Components.AjonpAvatar;
+    'AjonpButton': Components.AjonpButton;
+    'AjonpItemGrid': Components.AjonpItemGrid;
+    'AjonpItem': Components.AjonpItem;
+    'AjonpLabel': Components.AjonpLabel;
   }
 
   interface StencilIntrinsicElements {
-
+    'ajonp-avatar': Components.AjonpAvatarAttributes;
+    'ajonp-button': Components.AjonpButtonAttributes;
+    'ajonp-item-grid': Components.AjonpItemGridAttributes;
+    'ajonp-item': Components.AjonpItemAttributes;
+    'ajonp-label': Components.AjonpLabelAttributes;
   }
 
 
+  interface HTMLAjonpAvatarElement extends Components.AjonpAvatar, HTMLStencilElement {}
+  var HTMLAjonpAvatarElement: {
+    prototype: HTMLAjonpAvatarElement;
+    new (): HTMLAjonpAvatarElement;
+  };
+
+  interface HTMLAjonpButtonElement extends Components.AjonpButton, HTMLStencilElement {}
+  var HTMLAjonpButtonElement: {
+    prototype: HTMLAjonpButtonElement;
+    new (): HTMLAjonpButtonElement;
+  };
+
+  interface HTMLAjonpItemGridElement extends Components.AjonpItemGrid, HTMLStencilElement {}
+  var HTMLAjonpItemGridElement: {
+    prototype: HTMLAjonpItemGridElement;
+    new (): HTMLAjonpItemGridElement;
+  };
+
+  interface HTMLAjonpItemElement extends Components.AjonpItem, HTMLStencilElement {}
+  var HTMLAjonpItemElement: {
+    prototype: HTMLAjonpItemElement;
+    new (): HTMLAjonpItemElement;
+  };
+
+  interface HTMLAjonpLabelElement extends Components.AjonpLabel, HTMLStencilElement {}
+  var HTMLAjonpLabelElement: {
+    prototype: HTMLAjonpLabelElement;
+    new (): HTMLAjonpLabelElement;
+  };
 
   interface HTMLElementTagNameMap {
-
+    'ajonp-avatar': HTMLAjonpAvatarElement
+    'ajonp-button': HTMLAjonpButtonElement
+    'ajonp-item-grid': HTMLAjonpItemGridElement
+    'ajonp-item': HTMLAjonpItemElement
+    'ajonp-label': HTMLAjonpLabelElement
   }
 
   interface ElementTagNameMap {
-
+    'ajonp-avatar': HTMLAjonpAvatarElement;
+    'ajonp-button': HTMLAjonpButtonElement;
+    'ajonp-item-grid': HTMLAjonpItemGridElement;
+    'ajonp-item': HTMLAjonpItemElement;
+    'ajonp-label': HTMLAjonpLabelElement;
   }
 
 

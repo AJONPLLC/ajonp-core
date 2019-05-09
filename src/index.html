@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <title>Stencil Component Starter</title>
-  <script src="/build/mycomponent.js"></script>
-
-</head>
-<body>
-
-  <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
-
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>AJ on Purr-fect Solutions Stencil Example</title>
+    <script src="/build/mycomponent.js"></script>
+    <style>
+      ajonp-item-grid {
+        min-width: calc(50% - 2em);
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: space-around">
+      <ajonp-item-grid
+        default-src="https://placekitten.com/300/300"
+        default-label-text="Kitty"
+        default-color="#4b0a75"
+        default-button-text="Scratch"
+        button-type="primary"
+      ></ajonp-item-grid>
+      <ajonp-item-grid
+        default-src="https://placedog.net/300/300"
+        default-label-text="Puppy"
+        default-color="#F97912"
+        default-button-text="Bark Away"
+        button-type="secondary"
+      ></ajonp-item-grid>
+    </div>
+  </body>
 </html>
