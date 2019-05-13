@@ -8,18 +8,11 @@
     />
     <title>AJ on Purr-fect Solutions Stencil Example</title>
     <script src="/build/mycomponent.js"></script>
-    <style>
-      ajonp-item-grid {
-        min-width: calc(50% - 2em);
-      }
-    </style>
+
+    <link href="/build/app.css" rel="stylesheet" />
+    <script src="/build/app.js"></script>
   </head>
   <body>
-    <script src="/__/firebase/6.0.1/firebase-app.js"></script>
-    <script src="/__/firebase/6.0.1/firebase-performance.js"></script>
-    <script src="/__/firebase/init.js"></script>
-    <script>
-      var perf = firebase.performance();
-    </script>
+    <ajonp-grid></ajonp-grid>
   </body>
 </html>
